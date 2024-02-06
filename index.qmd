@@ -19,18 +19,23 @@ editor:
 
 ## Introduction
 
-### What is "mehtod"?
+### What is "method"?
 
-This is an introduction to Kernel regression, which is a non-parametric
-estimator that estimates the conditional expectation of two variables
-which is random. The goal of a kernel regression is to discover the
-non-linear relationship between two random variables. To discover the
-non-linear relationship, kernel estimator or kernel smoothing is the
-main method to estimate the curve for non-parametric statistics. In
-kernel estimator, weight function is known as kernel function
-[@efr2008]. Cite this paper [@bro2014principal]. The GEE [@wang2014].
+K-means algorithm requires users to specify the number of cluster to generate.
 
-This is my work and I want to add more work...
+The R functions are used to estimate the clusters and finally we have to visualize the K-means clusters.
+
+One of the advantage is K-means clustering is very simple and fast and disadvantage is it requires some prior knowledge for selecting the clusters.
+
+Kmeans clustering involves the following steps
+
+1.selection of clusters 
+
+2.Randomly picking the centroids
+
+3.Thirdly, assigning observations to centroid it belongs based on similarity
+
+4.Calculating the centroid and repeating the steps until the maximum number of iterations are reached 
 
 ### Related work
 
