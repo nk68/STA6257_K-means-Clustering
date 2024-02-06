@@ -106,5 +106,6 @@ ggplot1 = murders %>% ggplot(mapping = aes(x=population/10^6, y=total))
 ```
 
 ### Conclusion
+K-means is one method of cluster analysis that groups observations by minimizing Euclidean distances between them. Euclidean distances are analagous to measuring the hypotenuse of a triangle, where the differences between two observations on two variables (x and y) are plugged into the Pythagorean equation to solve for the shortest distance between the two points
 
 ## References
