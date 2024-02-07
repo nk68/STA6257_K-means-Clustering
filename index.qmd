@@ -1,5 +1,5 @@
 ---
-title: " Data Science Capstone Report"
+title: " Data Science Capstone project"
 author: "Nikhitha Karlapudi"
 date: '`r Sys.Date()`'
 format:
