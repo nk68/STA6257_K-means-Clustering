@@ -109,8 +109,8 @@ ggplot1 = murders %>% ggplot(mapping = aes(x=population/10^6, y=total))
 K-means is one method of cluster analysis that groups observations by minimizing Euclidean distances between them. Euclidean distances are analagous to measuring the hypotenuse of a triangle, where the differences between two observations on two variables (x and y) are plugged into the Pythagorean equation to solve for the shortest distance between the two points
 
 ## References
- datanovia.com
- datacamp.com
- Zubair M, Iqbal MDA, Shil A, Chowdhury MJM, Moni MA, Sarker IH. An Improved K-means Clustering Algorithm Towards an Efficient Data-Driven Modeling. Ann. Data. Sci. 2022 Jun 25:1–20. doi: 10.1007/s40745-022-00428-2. Epub ahead of print. PMCID: PMC9243813.
- simplilearn.com
+  [@datanovia.com]
+ [@datacamp.com]
+[@Zubair M, Iqbal MDA, Shil A, Chowdhury MJM, Moni MA, Sarker IH. An Improved K-means Clustering Algorithm Towards an Efficient Data-Driven Modeling. Ann. Data. Sci. 2022 Jun 25:1–20. doi: 10.1007/s40745-022-00428-2. Epub ahead of print. PMCID: PMC9243813.
+ simplilearn.com]
  https://www.publichealth.columbia.edu/research/population-health-methods/k-means-cluster-analysis
