@@ -1,6 +1,6 @@
 ---
 title: " Data Science Capstone project"
-author: "Nikhitha Karlapudi"
+author: "Nikhitha  Karlapudi"
 date: '`r Sys.Date()`'
 format:
   html:
@@ -113,6 +113,6 @@ K-means is one method of cluster analysis that groups observations by minimizing
 ## References
 https://www.datanovia.com/en/lessons/k-means-clustering-in-r-algorith-and-practical-examples/
 https://www.datacamp.com/tutorial/k-means-clustering-r
-[@Zubair M, Iqbal MDA, Shil A, Chowdhury MJM, Moni MA, Sarker IH. An Improved K-means Clustering Algorithm Towards an Efficient Data-Driven Modeling. Ann. Data. Sci. 2022 Jun 25:1–20. doi: 10.1007/s40745-022-00428-2. Epub ahead of print. PMCID: PMC9243813.
- simplilearn.com]
+[@Zubair M, Iqbal MDA, Shil A, Chowdhury MJM, Moni MA, Sarker IH. An Improved K-means Clustering Algorithm Towards an Efficient Data-Driven Modeling. Ann. Data. Sci. 2022 Jun 25:1–20. doi: 10.1007/s40745-022-00428-2. Epub ahead of print. PMCID: PMC9243813].
+ [simplilearn.com]
 https://www.publichealth.columbia.edu/research/population-health-methods/k-means-cluster-analysis
