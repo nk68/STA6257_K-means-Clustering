@@ -19,61 +19,136 @@ editor:
 
 ## Introduction
 
-K-means clustering   is one of the most commonly used unsupervised machine learning algorithm for partitioning a given data set into a set of k groups (i.e. k clusters), where k represents the number of groups pre-specified by the analyst. It classifies objects in multiple groups (i.e., clusters), such that objects within the same cluster are as similar as possible (i.e., high intra-class similarity), whereas objects from different clusters are as dissimilar as possible (i.e., low inter-class similarity). In k-means clustering, each cluster is represented by its center (i.e, centroid) which corresponds to the mean of points assigned to the cluster.
+K-means clustering is one of the most commonly used unsupervised machine
+learning algorithm for partitioning a given data set into a set of k
+groups (i.e. k clusters), where k represents the number of groups
+pre-specified by the analyst. It classifies objects in multiple groups
+(i.e., clusters), such that objects within the same cluster are as
+similar as possible (i.e., high intra-class similarity), whereas objects
+from different clusters are as dissimilar as possible (i.e., low
+inter-class similarity). In k-means clustering, each cluster is
+represented by its center (i.e, centroid) which corresponds to the mean
+of points assigned to the cluster.
 
-paper 1.
+#paper 1. 
+
+summary 
+
+K-means clustering is one of the most commonly used
+unsupervised machine learning algorithm for partitioning a given data
+set into a set of k groups (i.e. k clusters), where k represents the
+number of groups pre-specified by the analyst. It classifies objects in
+multiple groups (i.e., clusters), such that objects within the same
+cluster are as similar as possible (i.e., high intra-class similarity),
+whereas objects from different clusters are as dissimilar as possible
+(i.e., low inter-class similarity). In k-means clustering, each cluster
+is represented by its center (i.e, centroid) which corresponds to the
+mean of points assigned to the cluster.
+
+K-means clustering can be used to classify observations into k groups,
+based on their similarity. Each group is represented by the mean value
+of points in the group, known as the cluster centroid.
+
+K-means algorithm requires users to specify the number of cluster to
+generate. The R function kmeans() \[stats package\] can be used to
+compute k-means algorithm. The simplified format is kmeans(x, centers),
+where “x” is the data and centers is the number of clusters to be
+produced.
+
+After, computing k-means clustering, the R function fviz_cluster()
+\[factoextra package\] can be used to visualize the results. The format
+is fviz_cluster(km.res, data), where km.res is k-means results and data
+corresponds to the original data sets.
+
+#paper 2 
+
 summary
-K-means clustering  is one of the most commonly used unsupervised machine learning algorithm for partitioning a given data set into a set of k groups (i.e. k clusters), where k represents the number of groups pre-specified by the analyst. It classifies objects in multiple groups (i.e., clusters), such that objects within the same cluster are as similar as possible (i.e., high intra-class similarity), whereas objects from different clusters are as dissimilar as possible (i.e., low inter-class similarity). In k-means clustering, each cluster is represented by its center (i.e, centroid) which corresponds to the mean of points assigned to the cluster.
 
-K-means clustering can be used to classify observations into k groups, based on their similarity. Each group is represented by the mean value of points in the group, known as the cluster centroid.
+Clustering models aim to group data into distinct
+“clusters” or groups. This can be used an analysis by itself, or can be
+used as a feature in a supervised learning algorithm
 
-K-means algorithm requires users to specify the number of cluster to generate. The R function kmeans() [stats package] can be used to compute k-means algorithm. The simplified format is kmeans(x, centers), where “x” is the data and centers is the number of clusters to be produced.
+The k-means algorithm Imagine you want to create several fruit salads,
+each consisting of similar fruits.
 
-After, computing k-means clustering, the R function fviz_cluster() [factoextra package] can be used to visualize the results. The format is fviz_cluster(km.res, data), where km.res is k-means results and data corresponds to the original data sets.
+You decide on the number of fruit salads you want to create (k). For
+instance, you decide to make 3 fruit salads. You randomly choose 3
+fruits from the table as the starting "representatives" of each salad.
+Now, you go around the table and assign each fruit to the salad whose
+representative it most resembles. For instance, apples might go with
+pears, oranges with tangerines, and bananas with plantains. Once all the
+fruits have been assigned, you find the new "center" of each fruit salad
+by calculating the average fruit characteristics in each group (e.g.,
+size, color, taste). These new centers become the updated
+representatives. You repeat steps 3 and 4 several times, assigning
+fruits to the most similar representative and updating the
+representative each time until the groupings no longer change.
 
-paper 2
-summary
-Clustering models aim to group data into distinct “clusters” or groups. This can be used an analysis by itself, or can be used as a feature in a supervised learning algorithm
+#Paper 3
 
-The k-means algorithm
-Imagine you want to create several fruit salads, each consisting of similar fruits.
+K-means algorithm is one of the well-known unsupervised machine learning
+algorithms. The algorithm typically finds out distinct non-overlapping
+clusters in which each point is assigned to a group. The minimum squared
+distance technique distributes each point to the nearest clusters or
+subgroups. One of the K-means algorithm’s main concerns is to find out
+the initial optimal centroids of clusters. It is the most challenging
+task to determine the optimum position of the initial clusters’
+centroids at the very first iteration. This paper proposes an approach
+to find the optimal initial centroids efficiently to reduce the number
+of iterations and execution time. To analyze the effectiveness of our
+proposed method, we have utilized different real-world datasets to
+conduct experiments. We have first analyzed COVID-19 and patient
+datasets to show our proposed method’s efficiency. A synthetic dataset
+of 10M instances with 8 dimensions is also used to estimate the
+performance of the proposed algorithm. Experimental results show that
+our proposed method outperforms traditional kmeans++ and random
+centroids initialization methods regarding the computation time and the
+number of iterations.
 
-You decide on the number of fruit salads you want to create (k). For instance, you decide to make 3 fruit salads.
-You randomly choose 3 fruits from the table as the starting "representatives" of each salad.
-Now, you go around the table and assign each fruit to the salad whose representative it most resembles. For instance, apples might go with pears, oranges with tangerines, and bananas with plantains.
-Once all the fruits have been assigned, you find the new "center" of each fruit salad by calculating the average fruit characteristics in each group (e.g., size, color, taste). These new centers become the updated representatives.
-You repeat steps 3 and 4 several times, assigning fruits to the most similar representative and updating the representative each time until the groupings no longer change.
+#paper 4
 
-Paper 3
+What is Meant by the K-Means Clustering Algorithm? K-Means clustering is
+an unsupervised learning algorithm. There is no labeled data for this
+clustering, unlike in supervised learning. K-Means performs the division
+of objects into clusters that share similarities and are dissimilar to
+the objects belonging to another cluster.
 
-K-means algorithm is one of the well-known unsupervised machine learning algorithms. The algorithm typically finds out distinct non-overlapping clusters in which each point is assigned to a group. The minimum squared distance technique distributes each point to the nearest clusters or subgroups. One of the K-means algorithm’s main concerns is to find out the initial optimal centroids of clusters. It is the most challenging task to determine the optimum position of the initial clusters’ centroids at the very first iteration. This paper proposes an approach to find the optimal initial centroids efficiently to reduce the number of iterations and execution time. To analyze the effectiveness of our proposed method, we have utilized different real-world datasets to conduct experiments. We have first analyzed COVID-19 and patient datasets to show our proposed method’s efficiency. A synthetic dataset of 10M instances with 8 dimensions is also used to estimate the performance of the proposed algorithm. Experimental results show that our proposed method outperforms traditional kmeans++ and random centroids initialization methods regarding the computation time and the number of iterations.
+The term ‘K’ is a number. You need to tell the system how many clusters
+you need to create. For example, K = 2 refers to two clusters. There is
+a way of finding out what is the best or optimum value of K for a given
+data.
 
-paper 4
-
-What is Meant by the K-Means Clustering Algorithm?
-K-Means clustering is an unsupervised learning algorithm. There is no labeled data for this clustering, unlike in supervised learning. K-Means performs the division of objects into clusters that share similarities and are dissimilar to the objects belonging to another cluster. 
-
-The term ‘K’ is a number. You need to tell the system how many clusters you need to create. For example, K = 2 refers to two clusters. There is a way of finding out what is the best or optimum value of K for a given data. 
-
-For a better understanding of k-means, let's take an example from cricket. Imagine you received data on a lot of cricket players from all over the world, which gives information on the runs scored by the player and the wickets taken by them in the last ten matches. Based on this information, we need to group the data into two clusters, namely batsman and bowlers.
+For a better understanding of k-means, let's take an example from
+cricket. Imagine you received data on a lot of cricket players from all
+over the world, which gives information on the runs scored by the player
+and the wickets taken by them in the last ten matches. Based on this
+information, we need to group the data into two clusters, namely batsman
+and bowlers.
 
 Methods:
 
-The goal of the K-Means algorithm is to find clusters in the given input data. There are a couple of ways to accomplish this.
+The goal of the K-Means algorithm is to find clusters in the given input
+data. There are a couple of ways to accomplish this.
 
 #Elbow method
 
-The Elbow method is the best way to find the number of clusters. The elbow method constitutes running  K-Means clustering on the dataset.
+The Elbow method is the best way to find the number of clusters. The
+elbow method constitutes running K-Means clustering on the dataset.
 
-Next, we use within-sum-of-squares as a measure to find the optimum number of clusters that can be formed for a given data set. Within the sum of squares (WSS) is defined as the sum of the squared distance between each member of the cluster and its centroid.
+Next, we use within-sum-of-squares as a measure to find the optimum
+number of clusters that can be formed for a given data set. Within the
+sum of squares (WSS) is defined as the sum of the squared distance
+between each member of the cluster and its centroid.
 
-The WSS is measured for each value of K. The value of K, which has the least amount of WSS, is taken as the optimum value. 
+The WSS is measured for each value of K. The value of K, which has the
+least amount of WSS, is taken as the optimum value.
 
 Now, we draw a curve between WSS and the number of clusters.
 
 Assuming delivery points.
 
-Now the distance of each location from the centroid is measured, and each data point is assigned to the centroid, which is closest to it.
+Now the distance of each location from the centroid is measured, and
+each data point is assigned to the centroid, which is closest to it.
 
 Compute the actual centroid of data points for the first group.
 
@@ -83,67 +158,135 @@ Compute the actual centroid of data points for the second group.
 
 Reposition the random centroid to the actual centroid.
 
-Once the cluster becomes static, the k-means algorithm is said to be converged. 
+Once the cluster becomes static, the k-means algorithm is said to be
+converged.
 
-paper 5:
-https://stanford.edu/~cpiech/cs221/handouts/kmeans.html
-
-Say you are given a data set where each observed example has a set of features, but has no labels. Labels are an essential ingredient to a supervised algorithm like Support Vector Machines, which learns a hypothesis function to predict labels given features. So we can't run supervised learning. What can we do?
-
-One of the most straightforward tasks we can perform on a data set without labels is to find groups of data in our dataset which are similar to one another -- what we call clusters.
-
-K-Means is one of the most popular "clustering" algorithms. K-means stores $k$ centroids that it uses to define clusters. A point is considered to be in a particular cluster if it is closer to that cluster's centroid than any other centroid.
-
-K-Means finds the best centroids by alternating between (1) assigning data points to clusters based on the current centroids (2) chosing centroids (points which are the center of a cluster) based on the current assignment of data points to clusters.
-
-In the clustering problem, they are given a training set ${x^{(1)}, ... , x^{(m)}}$, and want to group the data into a few cohesive "clusters." Here, we are given feature vectors for each data point $x^{(i)} \in \mathbb{R}^n$ as usual; but no labels $y^{(i)}$ (making this an unsupervised learning problem). Our goal is to predict $k$ centroids and a label $c^{(i)}$ for each datapoint. 
-
-
-They used pseudo python to run k-means on a dataset.Numpy:K-Means is much faster if you write the update functions using operations on numpy arrays, instead of manually looping over the arrays and updating the values yourself.
-
-
-
-paper 6.
+#paper 5: 
 
 Introduction
 
-K-means is one method of cluster analysis that groups observations by minimizing Euclidean distances between them. Euclidean distances are analagous to measuring the hypotenuse of a triangle, where the differences between two observations on two variables (x and y) are plugged into the Pythagorean equation to solve for the shortest distance between the two points (length of the hypotenuse). Euclidean distances can be extended to n-dimensions with any number n, and the distances refer to numerical differences on any measured continuous variable, not just spatial or geometric distances. This definition of Euclidean distance, therefore, requires that all variables used to determine clustering using k-means must be continuous
+Say you are given a data set where each observed example has a set of
+features, but has no labels. Labels are an essential ingredient to a
+supervised algorithm like Support Vector Machines, which learns a
+hypothesis function to predict labels given features. So we can't run
+supervised learning. What can we do?
+
+One of the most straightforward tasks we can perform on a data set
+without labels is to find groups of data in our dataset which are
+similar to one another -- what we call clusters.
+
+K-Means is one of the most popular "clustering" algorithms. K-means
+stores $k$ centroids that it uses to define clusters. A point is
+considered to be in a particular cluster if it is closer to that
+cluster's centroid than any other centroid.
+
+K-Means finds the best centroids by alternating between (1) assigning
+data points to clusters based on the current centroids (2) chosing
+centroids (points which are the center of a cluster) based on the
+current assignment of data points to clusters.
+
+In the clustering problem, they are given a training set
+${x^{(1)}, ... , x^{(m)}}$, and want to group the data into a few
+cohesive "clusters." Here, we are given feature vectors for each data
+point $x^{(i)} \in \mathbb{R}^n$ as usual; but no labels $y^{(i)}$
+(making this an unsupervised learning problem). Our goal is to predict
+$k$ centroids and a label $c^{(i)}$ for each datapoint.
+
+They used pseudo python to run k-means on a dataset.Numpy:K-Means is
+much faster if you write the update functions using operations on numpy
+arrays, instead of manually looping over the arrays and updating the
+values yourself.
+
+#paper 6.
+
+Introduction
+
+K-means is one method of cluster analysis that groups observations by
+minimizing Euclidean distances between them. Euclidean distances are
+analagous to measuring the hypotenuse of a triangle, where the
+differences between two observations on two variables (x and y) are
+plugged into the Pythagorean equation to solve for the shortest distance
+between the two points (length of the hypotenuse). Euclidean distances
+can be extended to n-dimensions with any number n, and the distances
+refer to numerical differences on any measured continuous variable, not
+just spatial or geometric distances. This definition of Euclidean
+distance, therefore, requires that all variables used to determine
+clustering using k-means must be continuous
 
 Method
 
-In order to perform k-means clustering, the algorithm randomly assigns k initial centers (k specified by the user), either by randomly choosing points in the “Euclidean space” defined by all n variables, or by sampling k points of all available observations to serve as initial centers. It then iteratively assigns each observation to the nearest center. Next, it calculates the new center for each cluster as the centroid mean of the clustering variables for each cluster’s new set of observations. K-means re-iterates this process, assigning observations to the nearest center (some observations will change cluster). This process repeats until a new iteration no longer re-assigns any observations to a new cluster. At this point, the algorithm is considered to have converged, and the final cluster assignments constitute the clustering solution.
+In order to perform k-means clustering, the algorithm randomly assigns k
+initial centers (k specified by the user), either by randomly choosing
+points in the “Euclidean space” defined by all n variables, or by
+sampling k points of all available observations to serve as initial
+centers. It then iteratively assigns each observation to the nearest
+center. Next, it calculates the new center for each cluster as the
+centroid mean of the clustering variables for each cluster’s new set of
+observations. K-means re-iterates this process, assigning observations
+to the nearest center (some observations will change cluster). This
+process repeats until a new iteration no longer re-assigns any
+observations to a new cluster. At this point, the algorithm is
+considered to have converged, and the final cluster assignments
+constitute the clustering solution.
 
-There are several k-means algorithms available. The standard algorithm is the Hartigan-Wong algorithm, which aims to minimize the Euclidean distances of all points with their nearest cluster centers, by minimizing within-cluster sum of squared errors (SSE).
+There are several k-means algorithms available. The standard algorithm
+is the Hartigan-Wong algorithm, which aims to minimize the Euclidean
+distances of all points with their nearest cluster centers, by
+minimizing within-cluster sum of squared errors (SSE).
 
-In conclusion, cluster analysis, particularly methods like K-means clustering, offers valuable insights into grouping similar observations based on chosen variables. However, it's crucial to approach this technique with careful consideration of several factors.
+In conclusion, cluster analysis, particularly methods like K-means
+clustering, offers valuable insights into grouping similar observations
+based on chosen variables. However, it's crucial to approach this
+technique with careful consideration of several factors.
 
-Firstly, the selection of clustering variables should be comprehensive and representative of the underlying construct of interest. Sensitivity analyses using different variable sets can help ensure the robustness of the clustering algorithm.
+Firstly, the selection of clustering variables should be comprehensive
+and representative of the underlying construct of interest. Sensitivity
+analyses using different variable sets can help ensure the robustness of
+the clustering algorithm.
 
-Secondly, the choice of the number of clusters (k) in K-means clustering should ideally be driven by theory, although empirical methods can also be employed. Improper choices of k can lead to misleading results.
+Secondly, the choice of the number of clusters (k) in K-means clustering
+should ideally be driven by theory, although empirical methods can also
+be employed. Improper choices of k can lead to misleading results.
 
-Moreover, it's essential to acknowledge the assumptions underlying clustering methods, particularly K-means, and to be aware of the limitations when these assumptions are violated.
+Moreover, it's essential to acknowledge the assumptions underlying
+clustering methods, particularly K-means, and to be aware of the
+limitations when these assumptions are violated.
 
-Lastly, cluster analysis should be viewed as an exploratory tool, and its results should be interpreted cautiously. Validation techniques, both internal and external, can provide additional confidence in the clustering outcomes.
+Lastly, cluster analysis should be viewed as an exploratory tool, and
+its results should be interpreted cautiously. Validation techniques,
+both internal and external, can provide additional confidence in the
+clustering outcomes.
 
-Overall, the validity of cluster analysis results should be assessed based on theoretical considerations and the practical utility of the obtained cluster descriptions. When used judiciously and in conjunction with other analytical methods like factor analysis, cluster analysis can offer valuable insights into understanding similarities among observations within a dataset.
+Overall, the validity of cluster analysis results should be assessed
+based on theoretical considerations and the practical utility of the
+obtained cluster descriptions. When used judiciously and in conjunction
+with other analytical methods like factor analysis, cluster analysis can
+offer valuable insights into understanding similarities among
+observations within a dataset.
 
 ### What is "method"?
 
-K-means algorithm requires users to specify the number of cluster to generate.
+K-means algorithm requires users to specify the number of cluster to
+generate.
 
-The R functions are used to estimate the clusters and finally we have to visualize the K-means clusters.
+The R functions are used to estimate the clusters and finally we have to
+visualize the K-means clusters.
 
-One of the advantage is K-means clustering is very simple and fast and disadvantage is it requires some prior knowledge for selecting the clusters.
+One of the advantage is K-means clustering is very simple and fast and
+disadvantage is it requires some prior knowledge for selecting the
+clusters.
 
 Kmeans clustering involves the following steps
 
-1.selection of clusters 
+1.selection of clusters
 
 2.Randomly picking the centroids
 
-3.Thirdly, assigning observations to centroid it belongs based on similarity
+3.Thirdly, assigning observations to centroid it belongs based on
+similarity
 
-4.Calculating the centroid and repeating the steps until the maximum number of iterations are reached 
+4.Calculating the centroid and repeating the steps until the maximum
+number of iterations are reached
 
 ### Related work
 
@@ -214,11 +357,24 @@ ggplot1 = murders %>% ggplot(mapping = aes(x=population/10^6, y=total))
 ```
 
 ### Conclusion
-K-means is one method of cluster analysis that groups observations by minimizing Euclidean distances between them. Euclidean distances are analagous to measuring the hypotenuse of a triangle, where the differences between two observations on two variables (x and y) are plugged into the Pythagorean equation to solve for the shortest distance between the two points
+
+K-means is one method of cluster analysis that groups observations by
+minimizing Euclidean distances between them. Euclidean distances are
+analagous to measuring the hypotenuse of a triangle, where the
+differences between two observations on two variables (x and y) are
+plugged into the Pythagorean equation to solve for the shortest distance
+between the two points
 
 ## References
+
 https://www.datanovia.com/en/lessons/k-means-clustering-in-r-algorith-and-practical-examples/
+
 https://www.datacamp.com/tutorial/k-means-clustering-r
-[@Zubair M, Iqbal MDA, Shil A, Chowdhury MJM, Moni MA, Sarker IH. An Improved K-means Clustering Algorithm Towards an Efficient Data-Driven Modeling. Ann. Data. Sci. 2022 Jun 25:1–20. doi: 10.1007/s40745-022-00428-2. Epub ahead of print. PMCID: PMC9243813].
- [simplilearn.com]
+
+[@Zubair M, Iqbal MDA, Shil A, Chowdhury MJM, Moni MA, Sarker IH. An
+Improved K-means Clustering Algorithm Towards an Efficient Data-Driven
+Modeling. Ann. Data. Sci. 2022 Jun 25:1–20. doi:
+10.1007/s40745-022-00428-2. Epub ahead of print. PMCID: PMC9243813].
+\[simplilearn.com\]
+
 https://www.publichealth.columbia.edu/research/population-health-methods/k-means-cluster-analysis
